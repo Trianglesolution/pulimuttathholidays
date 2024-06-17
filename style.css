@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right top, #051937, #002d65, #004197, #1e54ca, limegreen);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-holder {
+  background:#fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  
+ 
+}
+
+.hero-title{
+   
+      font-family: "Poppins", sans-serif;
+      font-size: 40px;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
+   
+}
+
+#h1{
+   padding-top: 40px;
+   font-size: 30px;
+   font-weight: 600;
+}
+
+        /* Media Queries */
+        @media (max-width: 767px) {
+          .hero-img{
+             width: 100%;
+          }
+          #timer{
+             width: 100%;
+             
+          }
+          #countdown div {
+             font-size: 15px;
+          }
+          
+          #countdown span {
+             display: block;
+             font-size: 15px;
+          }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+#hero{
+   display: none;
+}
+        }
+
+        @media (min-width: 992px) {
+#hero {
+   display: none;
+}
+        }
+
+#abt{
+   background:url("bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+        .media-body {
+            padding-left: 15px;
+        }
+        .media img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+footer {
+   color: lightgrey;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 80px;
+}
+
+#timer{
+   margin-top: 40px;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+#countdown {
+   display: flex;
+   justify-content: space-around;
+   margin-top: 40px;
+   background: lightslategrey;
+   border-radius: 20px;
+   padding: 30px;
+   color: floralwhite;
+}
+
+#countdown div {
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+}
+
+#countdown span {
+   margin-right: -15px;
+   display: block;
+   font-size: 4em;
+}
+
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+ 
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
